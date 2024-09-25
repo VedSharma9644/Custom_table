@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Generator</title>
+    <link rel="stylesheet" href="table.css">
+    <script src="table.js"></script>
+</head>
+<body>
+    <div class="table-controls-field" id="table-controls">
+        <input type="number" class="input-field" id="row-count-number" placeholder="Rows">
+        <input type="number" class="input-field" id="column-count-number" placeholder="Columns">
+        <button id="create-table-btn" onclick="createTable()">Create Table</button>
+        <button id="add-row-btn" onclick="addRow()" disabled>+ Row</button>
+        <button id="add-column-btn" onclick="addColumn()" disabled>+ Column</button>
+    </div>
+    <div id="table-container"></div>
+
+
+</body>
+</html>
